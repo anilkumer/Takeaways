@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Takeawaysrus | Location Display</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="css/animsition.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function(){ 
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <header id="header" class="header-scroll top-header headrom"></header><br><br><br>
+    <section class="header-image">
+        <div class="header-inner-text">
+     <div class="container" id="searchbox">
+    <div class="row">
+        <div class="span12">
+            <form method="get" action="/" class="form-inline" >
+
+                <input name="q" class="span5" type="text"  placeholder="Search by resturant name ,cuisine or item" >
+                <input name="loc" class="span5" type="text"  placeholder="Location: City, State, Zip">
+                <button type="submit" class="btn btn-primary srch-btn"> <i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+     </div>
+ </section><br><br>
+      
+<section class="restaurants-list-container restaurants-list mobile-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-12">
+                <div class="search-result-header clearfix">
+                    <h2 class="title-02 float-left"> Restaurants in Banani, Dhaka</h2>
+                    <div class="float-right sortby">
+                        <span class="sort-01">254 Restaurants</span>  
+                       
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <!--Site Left Sorting option-->
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div id="restaurant-filter" style="">
+                           
+                            <div class="menu-padding hidden-lg hidden-md"></div>
+                <div class="clearfix"></div>
+                        <div class="restaurants-filters-sec">
+                            
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default panel-border">
+                                  
+                                    <div id="locations" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                        <div class="panel-body">
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_Banani" value="Banani" checked="" type="checkbox">
+                                                        <label for="location_Banani"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Banani (254)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_Gulshan1" value="Gulshan 1" type="checkbox">
+                                                        <label for="location_Gulshan1"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Gulshan 1 (0)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_Gulshan2" value="Gulshan 2" type="checkbox">
+                                                        <label for="location_Gulshan2"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Gulshan 2 (0)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_Dhanmondi" value="Dhanmondi" type="checkbox">
+                                                        <label for="location_Dhanmondi"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Dhanmondi (0)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_Uttara" value="Uttara" type="checkbox">
+                                                        <label for="location_Uttara"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Uttara (0)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_Khilgaon" value="Khilgaon" type="checkbox">
+                                                        <label for="location_Khilgaon"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Khilgaon (0)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_BailyRoad" value="Baily Road" type="checkbox">
+                                                        <label for="location_BailyRoad"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Baily Road (0)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_300Ft" value="300 Ft" type="checkbox">
+                                                        <label for="location_300Ft"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">300 Ft (0)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_JamunaFuturePark" value="Jamuna Future Park" type="checkbox">
+                                                        <label for="location_JamunaFuturePark"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Jamuna Future Park (0)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_Mirpur" value="Mirpur" type="checkbox">
+                                                        <label for="location_Mirpur"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Mirpur (0)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_BashundharaR/A" value="Bashundhara R/A" type="checkbox">
+                                                        <label for="location_BashundharaR/A"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Bashundhara R/A (0)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="locations" class="locations" id="location_Mohammadpur" value="Mohammadpur" type="checkbox">
+                                                        <label for="location_Mohammadpur"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Mohammadpur (0)</label>
+                                                </div>
+                                            <br clear="all">
+                                            <!--link btn-->
+                                            <a href="javascript:void(0)" data-toggle="modal" data-target="#locationFilterItemsPopup" class="pull-right red-link">More</a>
+                                            <!--link btn end-->
+                                        </div>
+                                    </div>
+                                    <div class="panel-heading">
+                                        <!--title-->
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" href="#cuisines"><i class="fa fa-angle-down"></i>Cuisines</a>
+                                          
+                                        </h4>
+                                        <!--title end-->
+                                    </div>
+                                    <div id="cuisines" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Bangladeshi" value="Bangladeshi" type="checkbox">
+                                                        <label for="cuisine_Bangladeshi"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Bangladeshi (23)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Biriyani" value="Biriyani" type="checkbox">
+                                                        <label for="cuisine_Biriyani"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Biriyani (8)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Foodcart" value="Food cart" type="checkbox">
+                                                        <label for="cuisine_Foodcart"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Food cart (0)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Pizza" value="Pizza" type="checkbox">
+                                                        <label for="cuisine_Pizza"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Pizza (16)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Japanese" value="Japanese" type="checkbox">
+                                                        <label for="cuisine_Japanese"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Japanese (7)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Thai" value="Thai" type="checkbox">
+                                                        <label for="cuisine_Thai"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Thai (22)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Sandwich" value="Sandwich" type="checkbox">
+                                                        <label for="cuisine_Sandwich"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Sandwich (7)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Mexican" value="Mexican" type="checkbox">
+                                                        <label for="cuisine_Mexican"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Mexican (5)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Burger" value="Burger" type="checkbox">
+                                                        <label for="cuisine_Burger"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Burger (16)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_IceCream" value="Ice Cream" type="checkbox">
+                                                        <label for="cuisine_IceCream"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Ice Cream (14)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_FastFood" value="Fast Food" type="checkbox">
+                                                        <label for="cuisine_FastFood"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Fast Food (22)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Indian" value="Indian" type="checkbox">
+                                                        <label for="cuisine_Indian"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Indian (20)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_OnlineBakery" value="Online Bakery" type="checkbox">
+                                                        <label for="cuisine_OnlineBakery"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Online Bakery (1)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Italian" value="Italian" type="checkbox">
+                                                        <label for="cuisine_Italian"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Italian (18)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_Korean" value="Korean" type="checkbox">
+                                                        <label for="cuisine_Korean"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Korean (5)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="cuisines" class="cuisines" id="cuisine_SeaFood" value="Sea Food" type="checkbox">
+                                                        <label for="cuisine_SeaFood"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Sea Food (0)</label>
+                                                </div>
+                                            <br clear="all">
+                                            <!--link btn-->
+                                            <a href="javascript:void(0)" data-toggle="modal" data-target="#cuisineFilterItemsPopup" class="pull-right red-link">More</a>
+                                            <!--link btn end-->
+                                        </div>
+                                    </div>
+                                    <div class="panel-heading">
+                                        <!--title-->
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" href="#highlights"><i class="fa fa-angle-down"></i>Highlights</a>
+                                           
+                                        </h4>
+                                        <!--title end-->
+                                    </div>
+                                    <div id="highlights" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_QubeeWifi" value="Qubee Wifi" type="checkbox">
+                                                        <label for="highlight_QubeeWifi"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/wifi-icon.png"></span> Qubee Wifi</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_TakeAway" value="Take Away" type="checkbox">
+                                                        <label for="highlight_TakeAway"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/take-away-icon.png"></span> Take Away</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_NotSpicy" value="Not Spicy" type="checkbox">
+                                                        <label for="highlight_NotSpicy"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/not-spicy-icon.png"></span> Not Spicy</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_OpenforSehri" value="Open for Sehri" type="checkbox">
+                                                        <label for="highlight_OpenforSehri"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/open-for-sehri.png"></span> Open for Sehri</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_TillMidnight" value="Till Midnight" type="checkbox">
+                                                        <label for="highlight_TillMidnight"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/till-midnight-icon.png"></span> Till Midnight</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_SmokingZone" value="Smoking Zone" type="checkbox">
+                                                        <label for="highlight_SmokingZone"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/smoking-icon.png"></span> Smoking Zone</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_CreditCard" value="Credit Card" type="checkbox">
+                                                        <label for="highlight_CreditCard"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/credit-card-icon.png"></span> Credit Card</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_EarlyBreakfast" value="Early Breakfast" type="checkbox">
+                                                        <label for="highlight_EarlyBreakfast"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/early-breakfast-icon.png"></span> Early Breakfast</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_AirConditioned" value="Air Conditioned" type="checkbox">
+                                                        <label for="highlight_AirConditioned"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/air-conditioned-icon.png"></span> Air Conditioned</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_CarParking" value="Car Parking" type="checkbox">
+                                                        <label for="highlight_CarParking"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/car-parking-icon.png"></span> Car Parking</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_KidsPlayzone" value="Kids Playzone" type="checkbox">
+                                                        <label for="highlight_KidsPlayzone"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/kids-playzone-icon.png"></span> Kids Playzone</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_Cafe/Lounge" value="Cafe/Lounge" type="checkbox">
+                                                        <label for="highlight_Cafe/Lounge"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/cafe-lounge-icon.png"></span> Cafe/Lounge</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_OutdoorSeating" value="Outdoor Seating" type="checkbox">
+                                                        <label for="highlight_OutdoorSeating"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/outdoor-seating-icon.png"></span> Outdoor Seating</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_Catering" value="Catering" type="checkbox">
+                                                        <label for="highlight_Catering"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/catering-icon.png"></span> Catering</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_SportsScreening" value="Sports Screening" type="checkbox">
+                                                        <label for="highlight_SportsScreening"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/sports-screening-icon.png"></span> Sports Screening</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_HappyHour" value="Happy Hour" type="checkbox">
+                                                        <label for="highlight_HappyHour"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/happy-hour-icon.png"></span> Happy Hour</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_Vegeterian" value="Vegeterian" type="checkbox">
+                                                        <label for="highlight_Vegeterian"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/vegeterian-icon.png"></span> Vegeterian</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_BandMusic" value="Band Music" type="checkbox">
+                                                        <label for="highlight_BandMusic"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/"></span> Band Music</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_Karoke" value="Karoke" type="checkbox">
+                                                        <label for="highlight_Karoke"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/karaoke-icon.png"></span> Karoke</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="highlights" class="highlights" id="highlight_FamilyFriendly" value="Family Friendly" type="checkbox">
+                                                        <label for="highlight_FamilyFriendly"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left"><span style="position:relative; top:-3px;"><img src="https://foodiezlivestorage.blob.core.windows.net/images-new/StaticImages/TagIcons/family-freindly-icon.png"></span> Family Friendly</label>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-heading">
+                                        <!--title-->
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" href="#priceranges"><i class="fa fa-angle-down"></i>Price Ranges</a>
+                                          
+                                        </h4>
+                                        <!--title end-->
+                                    </div>
+                                    <div id="priceranges" class="panel-collapse collapse ">
+                                        <div class="panel-body">
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="priceranges" class="priceranges" id="pricerange_100-200" value="100-200" type="checkbox">
+                                                        <label for="pricerange_100-200"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Tk 100-200 (29)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="priceranges" class="priceranges" id="pricerange_200-300" value="200-300" type="checkbox">
+                                                        <label for="pricerange_200-300"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Tk 200-300 (54)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="priceranges" class="priceranges" id="pricerange_300-500" value="300-500" type="checkbox">
+                                                        <label for="pricerange_300-500"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Tk 300-500 (81)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="priceranges" class="priceranges" id="pricerange_500-1000" value="500-1000" type="checkbox">
+                                                        <label for="pricerange_500-1000"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Tk 500-1000 (52)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="priceranges" class="priceranges" id="pricerange_1000-2000" value="1000-2000" type="checkbox">
+                                                        <label for="pricerange_1000-2000"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Tk 1000-2000 (10)</label>
+                                                </div>
+                                                <div class="filters-section clearfix">
+                                                    <div class="roundedcheck float-left">
+                                                        <input name="priceranges" class="priceranges" id="pricerange_2000-5000" value="2000-5000" type="checkbox">
+                                                        <label for="pricerange_2000-5000"></label>
+                                                    </div>
+                                                    <label class="filter-label float-left">Tk 2000-5000 (3)</label>
+                                                </div>
+                                            <br clear="all">
+                                            <!--link btn-->
+                                            <a href="javascript:void(0)" data-toggle="modal" data-target="#pricerangeFilterItemsPopup" class="pull-right red-link">More</a>
+                                            <!--link btn end-->
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+                    </div>
+                    <!--Site Left Sorting option end-->
+                    <!-- Restaurants list -->
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <div class="white-bg">
+
+            <!-- Restaurants name list -->
+    <div class="result-box clearfix">
+        <div class="row">
+            <!-- Restaurants branding img -->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="search-result-pic">
+                                <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=HAKKA-DHAKA&amp;number=J7MR65YRVM">
+                                
+                            <img class="search-result-img" title="HAKKA DHAKA" alt="HAKKA DHAKA" src="https://foodiezlivestorage.blob.core.windows.net/images-new/UploadedImages/Restaurants/6edd5430-9a82-cb52-1573-08d173aabfea/9fd4d7e4-b2c2-cb14-b633-08d3839e872b_medium.jpg" onerror="this.src='/Content/images/no-images/no-image-medium-restaurant.png';">
+                        </a>
+                </div>
+            </div>
+            <!-- Restaurants branding img end -->
+            <!-- Restaurants branding desc -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="search-result-option">
+                    <div class="search-result-title clearfix">
+                        <!-- Restaurants title -->
+                        <h2 class="title-02">
+                                    
+                                    <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=HAKKA-DHAKA&amp;number=J7MR65YRVM" class="listing-rest-name">HAKKA DHAKA</a>,
+                                    <a class="hidden-sm hidden-xs" href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title">Banani</span></a>
+                        </h2>
+                        <!-- Restaurants title end -->
+                        <!-- Restaurants rating -->
+                        <div class="rating-small rating-bg-10 float-right">
+                            <div class="review-rating">9.9</div>
+                        </div>
+                        
+                        <!-- Restaurants rating end-->
+                    </div>
+                    <!-- user rating -->
+                    <div class="reviewer-sec clearfix hidden-sm hidden-xs">
+                        <div class="user-ratings float-left"> <span>749</span> User Ratings </div>
+                        <div class="user-ratings reviews float-left"> <span>104</span> Reviews </div>
+                    </div>
+                    <!-- user rating end-->
+                    <!-- Restaurants details -->
+                    <ul class="common-list clearfix mobicon">
+                       
+                        <li class="">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs hidden-md hidden-lg">Most Popular Items:</span></span>
+                            <span class="search-list-item"><a href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title hidden-md hidden-lg">Banani</span></a></span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Most Popular Items:</span></span>
+                            <span class="search-list-item"></span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cuisine:</span></span>
+                            <span class="search-list-item">Chinese, Asian Fusion</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cost per Foodie:</span></span>
+                            <span class="search-list-item">Tk 100-200</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Time:</span></span>
+                            <span class="search-list-item">12:00 PM - 10:30 PM</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Address:</span></span>
+                            <span class="search-list-item">House-34, Road-10, Block-D, Banani, Dhaka</span>
+                        </li>
+                        
+                    </ul>
+                    <!-- Restaurants details end-->
+                    <!--user comments -->
+    
+                    <!--user comments end -->
+                    <!--btn -->
+
+
+
+                            <a class="btn btn-default float-right hidden-sm hidden-xs" href="/Dhaka/Restaurants/Details?name=HAKKA-DHAKA&amp;number=J7MR65YRVM">More</a>
+                    <!--btn end -->
+                </div>
+                <span class="border-dotted-bottom clearfix"></span>
+            </div>
+        </div>
+    </div>
+            <!-- Restaurants name list -->
+    <div class="result-box clearfix">
+        <div class="row">
+            <!-- Restaurants branding img -->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="search-result-pic">
+                                <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Taste-of-Lanka&amp;number=ILLBOW9B2P">
+                                
+                            <img class="search-result-img" title="Taste of Lanka" alt="Taste of Lanka" src="https://foodiezlivestorage.blob.core.windows.net/images-new/UploadedImages/Restaurants/de8a539f-b381-c4bd-30d8-08d33d105ef3/87a342ae-a45a-c0f3-0273-08d33d10901b_medium.jpg" onerror="this.src='/Content/images/no-images/no-image-medium-restaurant.png';">
+                        </a>
+                </div>
+            </div>
+            <!-- Restaurants branding img end -->
+            <!-- Restaurants branding desc -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="search-result-option">
+                    <div class="search-result-title clearfix">
+                        <!-- Restaurants title -->
+                        <h2 class="title-02">
+                                    
+                                    <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Taste-of-Lanka&amp;number=ILLBOW9B2P" class="listing-rest-name">Taste of Lanka</a>,
+                                    <a class="hidden-sm hidden-xs" href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title">Banani</span></a>
+                        </h2>
+                        <!-- Restaurants title end -->
+                        <!-- Restaurants rating -->
+                        <div class="rating-small rating-bg-10 float-right">
+                            <div class="review-rating">9.9</div>
+                        </div>
+                        
+                        <!-- Restaurants rating end-->
+                    </div>
+                    <!-- user rating -->
+                    <div class="reviewer-sec clearfix hidden-sm hidden-xs">
+                        <div class="user-ratings float-left"> <span>449</span> User Ratings </div>
+                        <div class="user-ratings reviews float-left"> <span>13</span> Reviews </div>
+                    </div>
+                    <!-- user rating end-->
+                    <!-- Restaurants details -->
+                    <ul class="common-list clearfix mobicon">
+                       
+                        <li class="">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs hidden-md hidden-lg">Most Popular Items:</span></span>
+                            <span class="search-list-item"><a href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title hidden-md hidden-lg">Banani</span></a></span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Most Popular Items:</span></span>
+                            <span class="search-list-item"></span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cuisine:</span></span>
+                            <span class="search-list-item">Asian Fusion, Sri Lankan</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cost per Foodie:</span></span>
+                            <span class="search-list-item">Tk 300-500</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Time:</span></span>
+                            <span class="search-list-item">12:15 PM - 4:00 PM - 6:30 PM - 10:30 PM</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Address:</span></span>
+                            <span class="search-list-item">House # 90/A, Road # 19, Block # E, Ground Floor, Banani, 1213 Banani Model Town, Dhaka</span>
+                        </li>
+                        
+                    </ul>
+                    <!-- Restaurants details end-->
+                    <!--user comments -->
+    
+                    <!--user comments end -->
+                    <!--btn -->
+
+
+
+                            <a class="btn btn-default float-right hidden-sm hidden-xs" href="/Dhaka/Restaurants/Details?name=Taste-of-Lanka&amp;number=ILLBOW9B2P">More</a>
+                    <!--btn end -->
+                </div>
+                <span class="border-dotted-bottom clearfix"></span>
+            </div>
+        </div>
+    </div>
+            <!-- Restaurants name list -->
+    <div class="result-box clearfix">
+        <div class="row">
+            <!-- Restaurants branding img -->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="search-result-pic">
+                                <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Aaheli-Kabab-Restaurant&amp;number=8Z57POGJ8M">
+                                
+                            <img class="search-result-img" title="Aaheli Kabab &amp; Restaurant" alt="Aaheli Kabab &amp; Restaurant" src="https://foodiezlivestorage.blob.core.windows.net/images-new/UploadedImages/Restaurants/4f82d1fb-5e1e-c8f3-f856-08d2124f492c/80e44fe3-de4d-c76e-15c3-08d2125179f6_medium.jpg" onerror="this.src='/Content/images/no-images/no-image-medium-restaurant.png';">
+                        </a>
+                </div>
+            </div>
+            <!-- Restaurants branding img end -->
+            <!-- Restaurants branding desc -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="search-result-option">
+                    <div class="search-result-title clearfix">
+                        <!-- Restaurants title -->
+                        <h2 class="title-02">
+                                    
+                                    <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Aaheli-Kabab-Restaurant&amp;number=8Z57POGJ8M" class="listing-rest-name">Aaheli Kabab &amp; Restaurant</a>,
+                                    <a class="hidden-sm hidden-xs" href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title">Banani</span></a>
+                        </h2>
+                        <!-- Restaurants title end -->
+                        <!-- Restaurants rating -->
+                        <div class="rating-small rating-bg-10 float-right">
+                            <div class="review-rating">9.9</div>
+                        </div>
+                        
+                        <!-- Restaurants rating end-->
+                    </div>
+                    <!-- user rating -->
+                    <div class="reviewer-sec clearfix hidden-sm hidden-xs">
+                        <div class="user-ratings float-left"> <span>362</span> User Ratings </div>
+                        <div class="user-ratings reviews float-left"> <span>20</span> Reviews </div>
+                    </div>
+                    <!-- user rating end-->
+                    <!-- Restaurants details -->
+                    <ul class="common-list clearfix mobicon">
+                       
+                        <li class="">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs hidden-md hidden-lg">Most Popular Items:</span></span>
+                            <span class="search-list-item"><a href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title hidden-md hidden-lg">Banani</span></a></span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Most Popular Items:</span></span>
+                            <span class="search-list-item">Chicken Fried Rice</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cuisine:</span></span>
+                            <span class="search-list-item">Kabab, Bangladeshi, Indian</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cost per Foodie:</span></span>
+                            <span class="search-list-item">Tk 100-200</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Time:</span></span>
+                            <span class="search-list-item">7.00 am - 11.00 pm</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Address:</span></span>
+                            <span class="search-list-item">NI Tower, Block E, Road 10, Plot 1, Dhaka-1213</span>
+                        </li>
+                        
+                    </ul>
+                    <!-- Restaurants details end-->
+                    <!--user comments -->
+    
+                    <!--user comments end -->
+                    <!--btn -->
+
+
+
+                            <a class="btn btn-default float-right hidden-sm hidden-xs" href="/Dhaka/Restaurants/Details?name=Aaheli-Kabab-Restaurant&amp;number=8Z57POGJ8M">More</a>
+                    <!--btn end -->
+                </div>
+                <span class="border-dotted-bottom clearfix"></span>
+            </div>
+        </div>
+    </div>
+            <!-- Restaurants name list -->
+    <div class="result-box clearfix">
+        <div class="row">
+            <!-- Restaurants branding img -->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="search-result-pic">
+                                <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Tarka&amp;number=9AJ6X42D79">
+                                
+                            <img class="search-result-img" title="Tarka" alt="Tarka" src="https://foodiezlivestorage.blob.core.windows.net/images-new/UploadedImages/Restaurants/61da487b-788d-c5b3-2e55-08d12ffe2d7c/ba2e4355-4dff-cb6e-222b-08d13b599188_medium.png" onerror="this.src='/Content/images/no-images/no-image-medium-restaurant.png';">
+                        </a>
+                </div>
+            </div>
+            <!-- Restaurants branding img end -->
+            <!-- Restaurants branding desc -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="search-result-option">
+                    <div class="search-result-title clearfix">
+                        <!-- Restaurants title -->
+                        <h2 class="title-02">
+                                    
+                                    <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Tarka&amp;number=9AJ6X42D79" class="listing-rest-name">Tarka</a>,
+                                    <a class="hidden-sm hidden-xs" href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title">Banani</span></a>
+                        </h2>
+                        <!-- Restaurants title end -->
+                        <!-- Restaurants rating -->
+                        <div class="rating-small rating-bg-10 float-right">
+                            <div class="review-rating">9.5</div>
+                        </div>
+                        
+                        <!-- Restaurants rating end-->
+                    </div>
+                    <!-- user rating -->
+                    <div class="reviewer-sec clearfix hidden-sm hidden-xs">
+                        <div class="user-ratings float-left"> <span>219</span> User Ratings </div>
+                        <div class="user-ratings reviews float-left"> <span>114</span> Reviews </div>
+                    </div>
+                    <!-- user rating end-->
+                    <!-- Restaurants details -->
+                    <ul class="common-list clearfix mobicon">
+                       
+                        <li class="">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs hidden-md hidden-lg">Most Popular Items:</span></span>
+                            <span class="search-list-item"><a href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title hidden-md hidden-lg">Banani</span></a></span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Most Popular Items:</span></span>
+                            <span class="search-list-item">Fresh Lime Soda, Jafrani Gulab Jamun, Shahi Special Kulfi</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cuisine:</span></span>
+                            <span class="search-list-item">Indian</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cost per Foodie:</span></span>
+                            <span class="search-list-item">Tk 300-500</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Time:</span></span>
+                            <span class="search-list-item">12:00 PM - 11:00 PM</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Address:</span></span>
+                            <span class="search-list-item">Road-10 House-62 Block-D,1213 Banani Model Town, Dhaka, Bangladesh</span>
+                        </li>
+                        
+                    </ul>
+                    <!-- Restaurants details end-->
+                    <!--user comments -->
+   
+                    <!--user comments end -->
+                    <!--btn -->
+
+
+
+                            <a class="btn btn-default float-right hidden-sm hidden-xs" href="/Dhaka/Restaurants/Details?name=Tarka&amp;number=9AJ6X42D79">More</a>
+                    <!--btn end -->
+                </div>
+                <span class="border-dotted-bottom clearfix"></span>
+            </div>
+        </div>
+    </div>
+            <!-- Restaurants name list -->
+    <div class="result-box clearfix">
+        <div class="row">
+            <!-- Restaurants branding img -->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="search-result-pic">
+                                <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Bukhara-Dhaka&amp;number=J96LNG9962">
+                                
+                            <img class="search-result-img" title="Bukhara Dhaka" alt="Bukhara Dhaka" src="https://foodiezlivestorage.blob.core.windows.net/images-new/UploadedImages/Restaurants/7e60f896-ae50-cd6b-cea7-08d0ca0c519e/717630e6-aecf-c5f8-f8f2-08d397fe2d39_medium.jpg" onerror="this.src='/Content/images/no-images/no-image-medium-restaurant.png';">
+                        </a>
+                </div>
+            </div>
+            <!-- Restaurants branding img end -->
+            <!-- Restaurants branding desc -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="search-result-option">
+                    <div class="search-result-title clearfix">
+                        <!-- Restaurants title -->
+                        <h2 class="title-02">
+                                    
+                                    <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Bukhara-Dhaka&amp;number=J96LNG9962" class="listing-rest-name">Bukhara Dhaka</a>,
+                                    <a class="hidden-sm hidden-xs" href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title">Banani</span></a>
+                        </h2>
+                        <!-- Restaurants title end -->
+                        <!-- Restaurants rating -->
+                        <div class="rating-small rating-bg-10 float-right">
+                            <div class="review-rating">9.6</div>
+                        </div>
+                        
+                        <!-- Restaurants rating end-->
+                    </div>
+                    <!-- user rating -->
+                    <div class="reviewer-sec clearfix hidden-sm hidden-xs">
+                        <div class="user-ratings float-left"> <span>108</span> User Ratings </div>
+                        <div class="user-ratings reviews float-left"> <span>112</span> Reviews </div>
+                    </div>
+                    <!-- user rating end-->
+                    <!-- Restaurants details -->
+                    <ul class="common-list clearfix mobicon">
+                       
+                        <li class="">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs hidden-md hidden-lg">Most Popular Items:</span></span>
+                            <span class="search-list-item"><a href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title hidden-md hidden-lg">Banani</span></a></span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Most Popular Items:</span></span>
+                            <span class="search-list-item">Kathai Roll, Kulfi, Butter Naan</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cuisine:</span></span>
+                            <span class="search-list-item">Indian</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cost per Foodie:</span></span>
+                            <span class="search-list-item">Tk 300-500</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Time:</span></span>
+                            <span class="search-list-item">12:00 pm to 3:30 pm - 7:00 pm to 11:30 pm</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Address:</span></span>
+                            <span class="search-list-item">Iqbal Center 17th Floor, 42 – Kemal Ataturk Avenue Banani, Dhaka – 1213.</span>
+                        </li>
+                        
+                    </ul>
+                    <!-- Restaurants details end-->
+                    <!--user comments -->
+   
+                    <!--user comments end -->
+                    <!--btn -->
+
+
+
+                            <a class="btn btn-default float-right hidden-sm hidden-xs" href="/Dhaka/Restaurants/Details?name=Bukhara-Dhaka&amp;number=J96LNG9962">More</a>
+                    <!--btn end -->
+                </div>
+                <span class="border-dotted-bottom clearfix"></span>
+            </div>
+        </div>
+    </div>
+            <!-- Restaurants name list -->
+    <div class="result-box clearfix">
+        <div class="row">
+            <!-- Restaurants branding img -->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="search-result-pic">
+                                <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=American-Burger&amp;number=1SE3E4INVN">
+                                
+                            <img class="search-result-img" title="American Burger" alt="American Burger" src="https://foodiezlivestorage.blob.core.windows.net/images-new/UploadedImages/Restaurants/ec7b2177-6e4d-c8a4-bfb0-08d0ca0b6e80/f2cbad36-776c-ce0d-00ea-08d44cd84f0a_medium.jpg" onerror="this.src='/Content/images/no-images/no-image-medium-restaurant.png';">
+                        </a>
+                </div>
+            </div>
+            <!-- Restaurants branding img end -->
+            <!-- Restaurants branding desc -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="search-result-option">
+                    <div class="search-result-title clearfix">
+                        <!-- Restaurants title -->
+                        <h2 class="title-02">
+                                    
+                                    <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=American-Burger&amp;number=1SE3E4INVN" class="listing-rest-name">American Burger</a>,
+                                    <a class="hidden-sm hidden-xs" href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title">Banani</span></a>
+                        </h2>
+                        <!-- Restaurants title end -->
+                        <!-- Restaurants rating -->
+                        <div class="rating-small rating-bg-8 float-right">
+                            <div class="review-rating">7.7</div>
+                        </div>
+                        
+                        <!-- Restaurants rating end-->
+                    </div>
+                    <!-- user rating -->
+                    <div class="reviewer-sec clearfix hidden-sm hidden-xs">
+                        <div class="user-ratings float-left"> <span>99</span> User Ratings </div>
+                        <div class="user-ratings reviews float-left"> <span>27</span> Reviews </div>
+                    </div>
+                    <!-- user rating end-->
+                    <!-- Restaurants details -->
+                    <ul class="common-list clearfix mobicon">
+                       
+                        <li class="">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs hidden-md hidden-lg">Most Popular Items:</span></span>
+                            <span class="search-list-item"><a href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title hidden-md hidden-lg">Banani</span></a></span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Most Popular Items:</span></span>
+                            <span class="search-list-item">Double Beef Cheese Burger, Chicken Cheese Burger, Beef Cheese Burger</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cuisine:</span></span>
+                            <span class="search-list-item">Burger</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cost per Foodie:</span></span>
+                            <span class="search-list-item">Tk 100-200</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Time:</span></span>
+                            <span class="search-list-item">11:00 AM - 11:00 PM</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Address:</span></span>
+                            <span class="search-list-item">16 kamal Ataturk Hamlet Tower, Banani, Dhaka</span>
+                        </li>
+                        
+                    </ul>
+                    <!-- Restaurants details end-->
+
+                    <!--btn -->
+
+
+
+                            <a class="btn btn-default float-right hidden-sm hidden-xs" href="/Dhaka/Restaurants/Details?name=American-Burger&amp;number=1SE3E4INVN">More</a>
+                    <!--btn end -->
+                </div>
+                <span class="border-dotted-bottom clearfix"></span>
+            </div>
+        </div>
+    </div>
+            <!-- Restaurants name list -->
+    <div class="result-box clearfix">
+        <div class="row">
+            <!-- Restaurants branding img -->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="search-result-pic">
+                                <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Preetom&amp;number=6CC2GSPX2O">
+                                
+                            <img class="search-result-img" title="Preetom" alt="Preetom" src="https://foodiezlivestorage.blob.core.windows.net/images-new/UploadedImages/Restaurants/c3d6f596-423c-c2c1-4c4a-08d122e42e2c/614dc34a-020a-c387-ec51-08d38242fcb3_medium.jpg" onerror="this.src='/Content/images/no-images/no-image-medium-restaurant.png';">
+                        </a>
+                </div>
+            </div>
+            <!-- Restaurants branding img end -->
+            <!-- Restaurants branding desc -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="search-result-option">
+                    <div class="search-result-title clearfix">
+                        <!-- Restaurants title -->
+                        <h2 class="title-02">
+                                    
+                                    <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Preetom&amp;number=6CC2GSPX2O" class="listing-rest-name">Preetom</a>,
+                                    <a class="hidden-sm hidden-xs" href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title">Banani</span></a>
+                        </h2>
+                        <!-- Restaurants title end -->
+                        <!-- Restaurants rating -->
+                        <div class="rating-small rating-bg-8 float-right">
+                            <div class="review-rating">7.8</div>
+                        </div>
+                        
+                        <!-- Restaurants rating end-->
+                    </div>
+                    <!-- user rating -->
+                    <div class="reviewer-sec clearfix hidden-sm hidden-xs">
+                        <div class="user-ratings float-left"> <span>91</span> User Ratings </div>
+                        <div class="user-ratings reviews float-left"> <span>43</span> Reviews </div>
+                    </div>
+                    <!-- user rating end-->
+                    <!-- Restaurants details -->
+                    <ul class="common-list clearfix mobicon">
+                       
+                        <li class="">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs hidden-md hidden-lg">Most Popular Items:</span></span>
+                            <span class="search-list-item"><a href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title hidden-md hidden-lg">Banani</span></a></span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Most Popular Items:</span></span>
+                            <span class="search-list-item">Water, Bread,Butter,Egg, Burger</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cuisine:</span></span>
+                            <span class="search-list-item">Burger</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cost per Foodie:</span></span>
+                            <span class="search-list-item">Tk 300-500</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Time:</span></span>
+                            <span class="search-list-item">12:00 pm - 10:00 pm</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Address:</span></span>
+                            <span class="search-list-item">FR Tower (Ground Floor) 32 Kamal Ataturk Avenue Banani, Dhaka</span>
+                        </li>
+                        
+                    </ul>
+                    <!-- Restaurants details end-->
+                    <!--user comments -->
+    
+                    <!--user comments end -->
+                    <!--btn -->
+
+
+
+                            <a class="btn btn-default float-right hidden-sm hidden-xs" href="/Dhaka/Restaurants/Details?name=Preetom&amp;number=6CC2GSPX2O">More</a>
+                    <!--btn end -->
+                </div>
+                <span class="border-dotted-bottom clearfix"></span>
+            </div>
+        </div>
+    </div>
+            <!-- Restaurants name list -->
+    <div class="result-box clearfix">
+        <div class="row">
+            <!-- Restaurants branding img -->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="search-result-pic">
+                                <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Live-Kitchen&amp;number=EJFI3DPK66">
+                                
+                            <img class="search-result-img" title="Live Kitchen" alt="Live Kitchen" src="https://foodiezlivestorage.blob.core.windows.net/images-new/UploadedImages/Restaurants/d9be5598-1548-c03c-d861-08d12dcf84ff/cc8adc0b-ce2a-c3e4-f9dd-08d13b5d76e8_medium.jpeg" onerror="this.src='/Content/images/no-images/no-image-medium-restaurant.png';">
+                        </a>
+                </div>
+            </div>
+            <!-- Restaurants branding img end -->
+            <!-- Restaurants branding desc -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="search-result-option">
+                    <div class="search-result-title clearfix">
+                        <!-- Restaurants title -->
+                        <h2 class="title-02">
+                                    
+                                    <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Live-Kitchen&amp;number=EJFI3DPK66" class="listing-rest-name">Live Kitchen</a>,
+                                    <a class="hidden-sm hidden-xs" href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title">Banani</span></a>
+                        </h2>
+                        <!-- Restaurants title end -->
+                        <!-- Restaurants rating -->
+                        <div class="rating-small rating-bg-7 float-right">
+                            <div class="review-rating">7.3</div>
+                        </div>
+                        
+                        <!-- Restaurants rating end-->
+                    </div>
+                    <!-- user rating -->
+                    <div class="reviewer-sec clearfix hidden-sm hidden-xs">
+                        <div class="user-ratings float-left"> <span>77</span> User Ratings </div>
+                        <div class="user-ratings reviews float-left"> <span>29</span> Reviews </div>
+                    </div>
+                    <!-- user rating end-->
+                    <!-- Restaurants details -->
+                    <ul class="common-list clearfix mobicon">
+                       
+                        <li class="">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs hidden-md hidden-lg">Most Popular Items:</span></span>
+                            <span class="search-list-item"><a href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title hidden-md hidden-lg">Banani</span></a></span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Most Popular Items:</span></span>
+                            <span class="search-list-item">The Burgoholic Surprize, The Original Cheese Burger, Signature BBQ Beef Burger</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cuisine:</span></span>
+                            <span class="search-list-item">Multi-Cuisine</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cost per Foodie:</span></span>
+                            <span class="search-list-item">Tk 200-300</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Time:</span></span>
+                            <span class="search-list-item">11:30 am - 11:00 pm</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Address:</span></span>
+                            <span class="search-list-item">House # 35, Road # 7, Block G, Banani, Dhaka-1213</span>
+                        </li>
+                        
+                    </ul>
+                    <!-- Restaurants details end-->
+                    <!--user comments -->
+    
+                    <!--user comments end -->
+                    <!--btn -->
+
+
+
+                            <a class="btn btn-default float-right hidden-sm hidden-xs" href="/Dhaka/Restaurants/Details?name=Live-Kitchen&amp;number=EJFI3DPK66">More</a>
+                    <!--btn end -->
+                </div>
+                <span class="border-dotted-bottom clearfix"></span>
+            </div>
+        </div>
+    </div>
+            <!-- Restaurants name list -->
+    <div class="result-box clearfix">
+        <div class="row">
+            <!-- Restaurants branding img -->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="search-result-pic">
+                                <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Crimson-Cup-BD&amp;number=FTPYX9ONMI">
+                                
+                            <img class="search-result-img" title="Crimson Cup BD" alt="Crimson Cup BD" src="https://foodiezlivestorage.blob.core.windows.net/images-new/UploadedImages/Restaurants/90e4271d-a0f2-c4e9-e1a4-08d25ac2a045/e3c8b974-aa05-c8ec-e00f-08d4451d1712_medium.JPG" onerror="this.src='/Content/images/no-images/no-image-medium-restaurant.png';">
+                        </a>
+                </div>
+            </div>
+            <!-- Restaurants branding img end -->
+            <!-- Restaurants branding desc -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="search-result-option">
+                    <div class="search-result-title clearfix">
+                        <!-- Restaurants title -->
+                        <h2 class="title-02">
+                                    
+                                    <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=Crimson-Cup-BD&amp;number=FTPYX9ONMI" class="listing-rest-name">Crimson Cup BD</a>,
+                                    <a class="hidden-sm hidden-xs" href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title">Banani</span></a>
+                        </h2>
+                        <!-- Restaurants title end -->
+                        <!-- Restaurants rating -->
+                        <div class="rating-small rating-bg-9 float-right">
+                            <div class="review-rating">9.1</div>
+                        </div>
+                        
+                        <!-- Restaurants rating end-->
+                    </div>
+                    <!-- user rating -->
+                    <div class="reviewer-sec clearfix hidden-sm hidden-xs">
+                        <div class="user-ratings float-left"> <span>57</span> User Ratings </div>
+                        <div class="user-ratings reviews float-left"> <span>39</span> Reviews </div>
+                    </div>
+                    <!-- user rating end-->
+                    <!-- Restaurants details -->
+                    <ul class="common-list clearfix mobicon">
+                       
+                        <li class="">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs hidden-md hidden-lg">Most Popular Items:</span></span>
+                            <span class="search-list-item"><a href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title hidden-md hidden-lg">Banani</span></a></span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Most Popular Items:</span></span>
+                            <span class="search-list-item">Special Platter, Special Platter, Special Platter</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cuisine:</span></span>
+                            <span class="search-list-item">Coffee</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cost per Foodie:</span></span>
+                            <span class="search-list-item">Tk 300-500</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Time:</span></span>
+                            <span class="search-list-item">10:00 AM - 12:00 AM</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Address:</span></span>
+                            <span class="search-list-item">2nd Floor, Point 11, House # 25, block # H, Road # 11, 1213 Banani Model Town, Dhaka</span>
+                        </li>
+                        
+                    </ul>
+                    <!-- Restaurants details end-->
+                    <!--user comments -->
+    
+                    <!--user comments end -->
+                    <!--btn -->
+
+
+
+                            <a class="btn btn-default float-right hidden-sm hidden-xs" href="/Dhaka/Restaurants/Details?name=Crimson-Cup-BD&amp;number=FTPYX9ONMI">More</a>
+                    <!--btn end -->
+                </div>
+                <span class="border-dotted-bottom clearfix"></span>
+            </div>
+        </div>
+    </div>
+            <!-- Restaurants name list -->
+    <div class="result-box clearfix">
+        <div class="row">
+            <!-- Restaurants branding img -->
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="search-result-pic">
+                                <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=KOBE-Japanese-Restaurant&amp;number=4OL29E9I9A">
+                                
+                            <img class="search-result-img" title="KOBE Japanese Restaurant" alt="KOBE Japanese Restaurant" src="https://foodiezlivestorage.blob.core.windows.net/images-new/UploadedImages/Restaurants/d8d3ee10-7f4a-c593-cc66-08d1df37fb10/c43ab1bf-385d-c41b-b89c-08d3797a2b79_medium.jpg" onerror="this.src='/Content/images/no-images/no-image-medium-restaurant.png';">
+                        </a>
+                </div>
+            </div>
+            <!-- Restaurants branding img end -->
+            <!-- Restaurants branding desc -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <div class="search-result-option">
+                    <div class="search-result-title clearfix">
+                        <!-- Restaurants title -->
+                        <h2 class="title-02">
+                                    
+                                    <a href="http://www.foodiez.com.bd/Dhaka/Restaurants/Details/?name=KOBE-Japanese-Restaurant&amp;number=4OL29E9I9A" class="listing-rest-name">KOBE Japanese Restaurant</a>,
+                                    <a class="hidden-sm hidden-xs" href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title">Banani</span></a>
+                        </h2>
+                        <!-- Restaurants title end -->
+                        <!-- Restaurants rating -->
+                        <div class="rating-small rating-bg-8 float-right">
+                            <div class="review-rating">8.4</div>
+                        </div>
+                        
+                        <!-- Restaurants rating end-->
+                    </div>
+                    <!-- user rating -->
+                    <div class="reviewer-sec clearfix hidden-sm hidden-xs">
+                        <div class="user-ratings float-left"> <span>53</span> User Ratings </div>
+                        <div class="user-ratings reviews float-left"> <span>38</span> Reviews </div>
+                    </div>
+                    <!-- user rating end-->
+                    <!-- Restaurants details -->
+                    <ul class="common-list clearfix mobicon">
+                       
+                        <li class="">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs hidden-md hidden-lg">Most Popular Items:</span></span>
+                            <span class="search-list-item"><a href="/Dhaka/Restaurants/Search?location=Banani"><span class="result-sub-title hidden-md hidden-lg">Banani</span></a></span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Most Popular Items:</span></span>
+                            <span class="search-list-item">Special Platter, Salad Bar, KOBE Spicy Fried Chicken</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cuisine:</span></span>
+                            <span class="search-list-item">Steaks, Salad, Chicken, Japanese</span>
+                        </li>
+                        <li>
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Cost per Foodie:</span></span>
+                            <span class="search-list-item">Tk 500-1000</span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Time:</span></span>
+                            <span class="search-list-item">Mon - Sun: 12:00 PM-04:00 PM, 6:00 PM-11:00 PM - </span>
+                        </li>
+                        <li class="hidden-sm hidden-xs">
+                            <span class="search-list-title"><span class="hidden-sm hidden-xs">Address:</span></span>
+                            <span class="search-list-item">4th Floor, Point 11, House # 25, block # H, Road # 11, 1213 Banani Model Town, Dhaka</span>
+                        </li>
+                        
+                    </ul>
+                    <!-- Restaurants details end-->
+                    <!--user comments -->
+   
+                    <!--user comments end -->
+                    <!--btn -->
+
+
+
+                            <a class="btn btn-default float-right hidden-sm hidden-xs" href="/Dhaka/Restaurants/Details?name=KOBE-Japanese-Restaurant&amp;number=4OL29E9I9A">More</a>
+                    <!--btn end -->
+                </div>
+                <span class="border-dotted-bottom clearfix"></span>
+            </div>
+        </div>
+    </div>
+
+                        </div>
+                     <div class="row">
+                         <div class="col-lg-6 col-md-4 col-sm-2 col-xs-3 mobile-width">
+                                    <span class="pageOfPage">Page 1 of 26</span>
+                         </div>
+                         <div class="col-lg-6 col-md-8 col-sm-10 col-xs-9 mobile-width">
+                                    <div class="pagination-container"><ul class="pagination"><li class="disabled PagedList-skipToPrevious"><a rel="prev">«</a></li><li class="active"><a>1</a></li><li><a href="/Dhaka/Restaurants/Search?locations=Banani&amp;booking=0&amp;group=0&amp;rw=0&amp;sortColumn=numberofratings&amp;page=2">2</a></li><li><a href="/Dhaka/Restaurants/Search?locations=Banani&amp;booking=0&amp;group=0&amp;rw=0&amp;sortColumn=numberofratings&amp;page=3">3</a></li><li><a href="/Dhaka/Restaurants/Search?locations=Banani&amp;booking=0&amp;group=0&amp;rw=0&amp;sortColumn=numberofratings&amp;page=4">4</a></li><li><a href="/Dhaka/Restaurants/Search?locations=Banani&amp;booking=0&amp;group=0&amp;rw=0&amp;sortColumn=numberofratings&amp;page=5">5</a></li><li class="disabled PagedList-ellipses"><a>…</a></li><li class="PagedList-skipToNext"><a href="/Dhaka/Restaurants/Search?locations=Banani&amp;booking=0&amp;group=0&amp;rw=0&amp;sortColumn=numberofratings&amp;page=2" rel="next">»</a></li></ul></div>
+                    </div>
+                     </div>
+                    </div>
+                    <!-- Restaurants list end-->
+                </div>
+            </div>
+            <!-- right area ad-container  -->
+            <div class="ad-container col-lg-3 col-md-3 col-sm-12 col-xs-12 ad-area">
+                <div class="hidden-sm hidden-xs">
+                    <!-- ad area -->
+                    
+                    <div class="foodiez-ad ad-horizontal-center" data-displaymarker="Common_RightBanner_1_250x250" data-width="250px" data-height="250px"></div>
+                    <div class="foodiez-ad ad-horizontal-center" data-displaymarker="Common_RightBanner_2_160x600" data-width="160px" data-height="600px"></div>
+                    <!-- ad area end -->
+                </div>
+            </div>
+            <!-- right area end-->
+        </div>
+    </div>
+</section>
+<section class="popular-sec mobile-common-gap hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 popular-sec-bg white-bg">
+                                <h2 class="title-02">Popular Locations</h2>
+                                <div class="row">
+                                    <!-- ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Banani" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Banani">Banani (254)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Gulshan 1" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Gulshan 1">Gulshan 1 (112)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Gulshan 2" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Gulshan 2">Gulshan 2 (161)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Dhanmondi" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Dhanmondi">Dhanmondi (322)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Uttara" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Uttara">Uttara (298)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Khilgaon" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Khilgaon">Khilgaon (101)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Baily Road" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Baily Road">Baily Road (55)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=300 Ft" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=300 Ft">300 Ft (78)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Jamuna Future Park" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Jamuna Future Park">Jamuna Future Park (57)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Mirpur" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Mirpur">Mirpur (164)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Bashundhara R/A" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Bashundhara R/A">Bashundhara R/A (78)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations --><div data-ng-repeat="location in popularLocations" class="col-lg-3 col-md-3 col-sm-3 text-center ng-scope">
+                                        <a ng-href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Mohammadpur" class="location ng-binding" href="http://www.foodiez.com.bd/Dhaka/Restaurants/Search?locations=Mohammadpur">Mohammadpur (122)</a>
+                                    </div><!-- end ngRepeat: location in popularLocations -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+    
+
+    <footer class="footer" id="footer">
+        <script src="js/tether.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/animsition.min.js"></script>
+        <script src="js/bootstrap-slider.min.js"></script>
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/headroom.js"></script>
+        <script src="js/takeaway.min.js"></script>
+    </body>
+    </html>
